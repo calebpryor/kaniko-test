@@ -9,7 +9,7 @@ spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
-    args: ["--context=<SOURCE_REPO_URL>",
+    args: ["--context=git://github.com/calebpryor/kaniko-test.git",
             "--destination=<DESTINATION_REPO_URL>"]
     volumeMounts:
       - name: kaniko-secret
